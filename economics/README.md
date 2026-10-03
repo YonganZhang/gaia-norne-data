@@ -1,0 +1,1 @@
+Run `python economics/reproduce_economics.py` from the repository root. Requires NumPy only. Revalues ten selected primary policies, baseline and fixed reference; checks 60 scenarios, five water limits and the economic decomposition. Does not regenerate Agent choices or simulator runs.

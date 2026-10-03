@@ -1,0 +1,799 @@
+{
+  "primary": {
+    "n": 10,
+    "mean_MUSD": 361.2660562740384,
+    "median_MUSD": 356.9328622999152,
+    "sd_MUSD": 50.72219550644794,
+    "best_MUSD": 454.68616498714067,
+    "reference_MUSD": 62.621191192064764,
+    "difference_MUSD": 298.64486508197365,
+    "difference_CI95_MUSD": [
+      262.3603922404419,
+      334.9293379235054
+    ],
+    "one_sample_p": 1.7049574020603326e-08,
+    "runs": [
+      {
+        "run": 1,
+        "selected_physical": "physical/team_F2full7_1_r3_c5_0ff569bbd8.npz",
+        "gain_USD": 370915482.0946994,
+        "first_gain_USD": 266217793.87779593,
+        "best_after_first_increment_USD": 104697688.21690345,
+        "accepted_round_gains_USD": [
+          266217793.87779593,
+          330684659.5998678,
+          370915482.0946994
+        ],
+        "model_alias": "sonnet"
+      },
+      {
+        "run": 2,
+        "selected_physical": "physical/team_F2full7_2_r2_c5_e4272aa1db.npz",
+        "gain_USD": 360735217.7670033,
+        "first_gain_USD": 360735217.7670033,
+        "best_after_first_increment_USD": 0.0,
+        "accepted_round_gains_USD": [
+          360735217.7670033
+        ],
+        "model_alias": "sonnet"
+      },
+      {
+        "run": 3,
+        "selected_physical": "physical/team_F2full7_3_r3_c4_c3b1a8de66.npz",
+        "gain_USD": 454686164.98714066,
+        "first_gain_USD": 350038284.5591221,
+        "best_after_first_increment_USD": 104647880.42801857,
+        "accepted_round_gains_USD": [
+          350038284.5591221,
+          407795753.6922612,
+          454686164.98714066
+        ],
+        "model_alias": "sonnet"
+      },
+      {
+        "run": 4,
+        "selected_physical": "physical/team_F2full7_4_r3_c2_b26b3be651.npz",
+        "gain_USD": 418022105.8006425,
+        "first_gain_USD": 340785588.97411203,
+        "best_after_first_increment_USD": 77236516.82653046,
+        "accepted_round_gains_USD": [
+          340785588.97411203,
+          381522233.8774438,
+          418022105.8006425
+        ],
+        "model_alias": "sonnet"
+      },
+      {
+        "run": 5,
+        "selected_physical": "physical/team_F2full7_5_r2_c4_502200df6f.npz",
+        "gain_USD": 389596597.11366653,
+        "first_gain_USD": 325067042.693167,
+        "best_after_first_increment_USD": 64529554.42049956,
+        "accepted_round_gains_USD": [
+          325067042.693167,
+          389596597.11366653,
+          382012172.0687046
+        ],
+        "model_alias": "sonnet"
+      },
+      {
+        "run": 6,
+        "selected_physical": "physical/team_F2full7_6_r3_c5_7307426f69.npz",
+        "gain_USD": 338123570.1608629,
+        "first_gain_USD": 243798880.17487478,
+        "best_after_first_increment_USD": 94324689.98598814,
+        "accepted_round_gains_USD": [
+          243798880.17487478,
+          296333331.6961293,
+          338123570.1608629
+        ],
+        "model_alias": "sonnet"
+      },
+      {
+        "run": 7,
+        "selected_physical": "physical/team_F2full7_7_r3_c4_4e8035c6d4.npz",
+        "gain_USD": 353130506.8328271,
+        "first_gain_USD": 295939107.3357997,
+        "best_after_first_increment_USD": 57191399.4970274,
+        "accepted_round_gains_USD": [
+          295939107.3357997,
+          331561581.60726404,
+          353130506.8328271
+        ],
+        "model_alias": "sonnet"
+      },
+      {
+        "run": 8,
+        "selected_physical": "physical/team_F2full7_8_r2_c4_4cc21f1bb9.npz",
+        "gain_USD": 335610117.0596721,
+        "first_gain_USD": 309880789.66033745,
+        "best_after_first_increment_USD": 25729327.39933467,
+        "accepted_round_gains_USD": [
+          309880789.66033745,
+          335610117.0596721,
+          335610117.0596721
+        ],
+        "model_alias": "sonnet"
+      },
+      {
+        "run": 9,
+        "selected_physical": "physical/team_F2full7_9_r3_c5_11c7546c1d.npz",
+        "gain_USD": 279951791.90558314,
+        "first_gain_USD": 274285840.0672059,
+        "best_after_first_increment_USD": 5665951.838377237,
+        "accepted_round_gains_USD": [
+          274285840.0672059,
+          279951791.90558314
+        ],
+        "model_alias": "sonnet"
+      },
+      {
+        "run": 10,
+        "selected_physical": "physical/team_F2full7_10_r3_c2_3734b2f0ef.npz",
+        "gain_USD": 311889009.0182867,
+        "first_gain_USD": 280248088.6527653,
+        "best_after_first_increment_USD": 31640920.36552143,
+        "accepted_round_gains_USD": [
+          280248088.6527653,
+          300439700.3798208,
+          311889009.0182867
+        ],
+        "model_alias": "sonnet"
+      }
+    ]
+  },
+  "economic_sensitivity": [
+    {
+      "c_inj": 0.0,
+      "c_prod": 0.0,
+      "discount_percent": 0,
+      "price_scale": 0.8,
+      "mean_gain_MUSD": 230.25154707103715,
+      "mean_margin_over_fixed_reference_MUSD": -85.99244265446296,
+      "runs_above_reference": 3,
+      "min_gain_MUSD": 94.71196377562427
+    },
+    {
+      "c_inj": 0.0,
+      "c_prod": 0.0,
+      "discount_percent": 0,
+      "price_scale": 1.0,
+      "mean_gain_MUSD": 287.81443383879645,
+      "mean_margin_over_fixed_reference_MUSD": -107.4905533180787,
+      "runs_above_reference": 3,
+      "min_gain_MUSD": 118.38995471953058
+    },
+    {
+      "c_inj": 0.0,
+      "c_prod": 0.0,
+      "discount_percent": 0,
+      "price_scale": 1.2,
+      "mean_gain_MUSD": 345.37732060655577,
+      "mean_margin_over_fixed_reference_MUSD": -128.9886639816944,
+      "runs_above_reference": 3,
+      "min_gain_MUSD": 142.0679456634369
+    },
+    {
+      "c_inj": 0.0,
+      "c_prod": 0.0,
+      "discount_percent": 2,
+      "price_scale": 0.8,
+      "mean_gain_MUSD": 251.90498066888577,
+      "mean_margin_over_fixed_reference_MUSD": -33.06107165064567,
+      "runs_above_reference": 3,
+      "min_gain_MUSD": 130.41875807422923
+    },
+    {
+      "c_inj": 0.0,
+      "c_prod": 0.0,
+      "discount_percent": 2,
+      "price_scale": 1.0,
+      "mean_gain_MUSD": 314.88122583610726,
+      "mean_margin_over_fixed_reference_MUSD": -41.32633956330681,
+      "runs_above_reference": 3,
+      "min_gain_MUSD": 163.0234475927868
+    },
+    {
+      "c_inj": 0.0,
+      "c_prod": 0.0,
+      "discount_percent": 2,
+      "price_scale": 1.2,
+      "mean_gain_MUSD": 377.8574710033288,
+      "mean_margin_over_fixed_reference_MUSD": -49.59160747596788,
+      "runs_above_reference": 3,
+      "min_gain_MUSD": 195.62813711134433
+    },
+    {
+      "c_inj": 0.0,
+      "c_prod": 0.0,
+      "discount_percent": 8,
+      "price_scale": 0.8,
+      "mean_gain_MUSD": 275.40873747455703,
+      "mean_margin_over_fixed_reference_MUSD": 60.15787589297402,
+      "runs_above_reference": 6,
+      "min_gain_MUSD": 186.64647621295072
+    },
+    {
+      "c_inj": 0.0,
+      "c_prod": 0.0,
+      "discount_percent": 8,
+      "price_scale": 1.0,
+      "mean_gain_MUSD": 344.26092184319623,
+      "mean_margin_over_fixed_reference_MUSD": 75.19734486621743,
+      "runs_above_reference": 6,
+      "min_gain_MUSD": 233.30809526618813
+    },
+    {
+      "c_inj": 0.0,
+      "c_prod": 0.0,
+      "discount_percent": 8,
+      "price_scale": 1.2,
+      "mean_gain_MUSD": 413.1131062118354,
+      "mean_margin_over_fixed_reference_MUSD": 90.23681383946085,
+      "runs_above_reference": 6,
+      "min_gain_MUSD": 279.9697143194256
+    },
+    {
+      "c_inj": 0.0,
+      "c_prod": 0.0,
+      "discount_percent": 15,
+      "price_scale": 0.8,
+      "mean_gain_MUSD": 264.8619403514987,
+      "mean_margin_over_fixed_reference_MUSD": 101.74041572904048,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 201.71791432053567
+    },
+    {
+      "c_inj": 0.0,
+      "c_prod": 0.0,
+      "discount_percent": 15,
+      "price_scale": 1.0,
+      "mean_gain_MUSD": 331.0774254393735,
+      "mean_margin_over_fixed_reference_MUSD": 127.17551966130065,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 252.1473929006696
+    },
+    {
+      "c_inj": 0.0,
+      "c_prod": 0.0,
+      "discount_percent": 15,
+      "price_scale": 1.2,
+      "mean_gain_MUSD": 397.2929105272482,
+      "mean_margin_over_fixed_reference_MUSD": 152.610623593561,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 302.5768714808035
+    },
+    {
+      "c_inj": 1.0,
+      "c_prod": 0.5,
+      "discount_percent": 0,
+      "price_scale": 0.8,
+      "mean_gain_MUSD": 357.00097874603745,
+      "mean_margin_over_fixed_reference_MUSD": 209.9273550205373,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 246.3596268380003
+    },
+    {
+      "c_inj": 1.0,
+      "c_prod": 0.5,
+      "discount_percent": 0,
+      "price_scale": 1.0,
+      "mean_gain_MUSD": 414.5638655137968,
+      "mean_margin_over_fixed_reference_MUSD": 188.42924435692169,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 276.7987890475001
+    },
+    {
+      "c_inj": 1.0,
+      "c_prod": 0.5,
+      "discount_percent": 0,
+      "price_scale": 1.2,
+      "mean_gain_MUSD": 472.12675228155615,
+      "mean_margin_over_fixed_reference_MUSD": 166.93113369330598,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 307.23795125699996
+    },
+    {
+      "c_inj": 1.0,
+      "c_prod": 0.5,
+      "discount_percent": 2,
+      "price_scale": 0.8,
+      "mean_gain_MUSD": 337.3522074469036,
+      "mean_margin_over_fixed_reference_MUSD": 200.23957442595494,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 238.74801380189086
+    },
+    {
+      "c_inj": 1.0,
+      "c_prod": 0.5,
+      "discount_percent": 2,
+      "price_scale": 1.0,
+      "mean_gain_MUSD": 400.32845261412507,
+      "mean_margin_over_fixed_reference_MUSD": 191.97430651329356,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 276.46463402458335
+    },
+    {
+      "c_inj": 1.0,
+      "c_prod": 0.5,
+      "discount_percent": 2,
+      "price_scale": 1.2,
+      "mean_gain_MUSD": 463.3046977813465,
+      "mean_margin_over_fixed_reference_MUSD": 183.70903860063237,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 314.18125424727583
+    },
+    {
+      "c_inj": 1.0,
+      "c_prod": 0.5,
+      "discount_percent": 8,
+      "price_scale": 0.8,
+      "mean_gain_MUSD": 283.9113046899781,
+      "mean_margin_over_fixed_reference_MUSD": 171.8816360008521,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 213.008786086905
+    },
+    {
+      "c_inj": 1.0,
+      "c_prod": 0.5,
+      "discount_percent": 8,
+      "price_scale": 1.0,
+      "mean_gain_MUSD": 352.76348905861727,
+      "mean_margin_over_fixed_reference_MUSD": 186.92110497409553,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 261.6973795096469
+    },
+    {
+      "c_inj": 1.0,
+      "c_prod": 0.5,
+      "discount_percent": 8,
+      "price_scale": 1.2,
+      "mean_gain_MUSD": 421.61567342725647,
+      "mean_margin_over_fixed_reference_MUSD": 201.96057394733893,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 310.38597293238877
+    },
+    {
+      "c_inj": 1.0,
+      "c_prod": 0.5,
+      "discount_percent": 15,
+      "price_scale": 0.8,
+      "mean_gain_MUSD": 232.9687235485556,
+      "mean_margin_over_fixed_reference_MUSD": 142.86045471930575,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 183.38971471966815
+    },
+    {
+      "c_inj": 1.0,
+      "c_prod": 0.5,
+      "discount_percent": 15,
+      "price_scale": 1.0,
+      "mean_gain_MUSD": 299.18420863643036,
+      "mean_margin_over_fixed_reference_MUSD": 168.2955586515659,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 234.20022090745877
+    },
+    {
+      "c_inj": 1.0,
+      "c_prod": 0.5,
+      "discount_percent": 15,
+      "price_scale": 1.2,
+      "mean_gain_MUSD": 365.39969372430517,
+      "mean_margin_over_fixed_reference_MUSD": 193.73066258382607,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 285.0107270952492
+    },
+    {
+      "c_inj": 2.0,
+      "c_prod": 1.0,
+      "discount_percent": 0,
+      "price_scale": 0.8,
+      "mean_gain_MUSD": 483.75041042103766,
+      "mean_margin_over_fixed_reference_MUSD": 505.84715269553755,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 370.9626048380003
+    },
+    {
+      "c_inj": 2.0,
+      "c_prod": 1.0,
+      "discount_percent": 0,
+      "price_scale": 1.0,
+      "mean_gain_MUSD": 541.3132971887969,
+      "mean_margin_over_fixed_reference_MUSD": 484.3490420319217,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 401.40176704750013
+    },
+    {
+      "c_inj": 2.0,
+      "c_prod": 1.0,
+      "discount_percent": 0,
+      "price_scale": 1.2,
+      "mean_gain_MUSD": 598.8761839565564,
+      "mean_margin_over_fixed_reference_MUSD": 462.85093136830614,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 431.84092925699997
+    },
+    {
+      "c_inj": 2.0,
+      "c_prod": 1.0,
+      "discount_percent": 2,
+      "price_scale": 0.8,
+      "mean_gain_MUSD": 422.79943422492136,
+      "mean_margin_over_fixed_reference_MUSD": 433.54022050255526,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 326.6295467130127
+    },
+    {
+      "c_inj": 2.0,
+      "c_prod": 1.0,
+      "discount_percent": 2,
+      "price_scale": 1.0,
+      "mean_gain_MUSD": 485.7756793921429,
+      "mean_margin_over_fixed_reference_MUSD": 425.2749525898939,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 364.3461669357052
+    },
+    {
+      "c_inj": 2.0,
+      "c_prod": 1.0,
+      "discount_percent": 2,
+      "price_scale": 1.2,
+      "mean_gain_MUSD": 548.7519245593644,
+      "mean_margin_over_fixed_reference_MUSD": 417.0096846772329,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 402.06278715839767
+    },
+    {
+      "c_inj": 2.0,
+      "c_prod": 1.0,
+      "discount_percent": 8,
+      "price_scale": 0.8,
+      "mean_gain_MUSD": 292.4138719053992,
+      "mean_margin_over_fixed_reference_MUSD": 283.6053961087302,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 231.263198482841
+    },
+    {
+      "c_inj": 2.0,
+      "c_prod": 1.0,
+      "discount_percent": 8,
+      "price_scale": 1.0,
+      "mean_gain_MUSD": 361.2660562740384,
+      "mean_margin_over_fixed_reference_MUSD": 298.64486508197365,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 279.95179190558315
+    },
+    {
+      "c_inj": 2.0,
+      "c_prod": 1.0,
+      "discount_percent": 8,
+      "price_scale": 1.2,
+      "mean_gain_MUSD": 430.1182406426777,
+      "mean_margin_over_fixed_reference_MUSD": 313.68433405521716,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 328.6403853283253
+    },
+    {
+      "c_inj": 2.0,
+      "c_prod": 1.0,
+      "discount_percent": 15,
+      "price_scale": 0.8,
+      "mean_gain_MUSD": 201.07550674561256,
+      "mean_margin_over_fixed_reference_MUSD": 183.98049370957082,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 163.537404688174
+    },
+    {
+      "c_inj": 2.0,
+      "c_prod": 1.0,
+      "discount_percent": 15,
+      "price_scale": 1.0,
+      "mean_gain_MUSD": 267.29099183348734,
+      "mean_margin_over_fixed_reference_MUSD": 209.41559764183097,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 214.34791087596463
+    },
+    {
+      "c_inj": 2.0,
+      "c_prod": 1.0,
+      "discount_percent": 15,
+      "price_scale": 1.2,
+      "mean_gain_MUSD": 333.50647692136204,
+      "mean_margin_over_fixed_reference_MUSD": 234.8507015740911,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 265.15841706375505
+    },
+    {
+      "c_inj": 3.0,
+      "c_prod": 2.0,
+      "discount_percent": 0,
+      "price_scale": 0.8,
+      "mean_gain_MUSD": 637.7096577710375,
+      "mean_margin_over_fixed_reference_MUSD": 882.2283280455376,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 523.2271329841248
+    },
+    {
+      "c_inj": 3.0,
+      "c_prod": 2.0,
+      "discount_percent": 0,
+      "price_scale": 1.0,
+      "mean_gain_MUSD": 695.2725445387966,
+      "mean_margin_over_fixed_reference_MUSD": 860.7302173819216,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 556.6101390474998
+    },
+    {
+      "c_inj": 3.0,
+      "c_prod": 2.0,
+      "discount_percent": 0,
+      "price_scale": 1.2,
+      "mean_gain_MUSD": 752.835431306556,
+      "mean_margin_over_fixed_reference_MUSD": 839.2321067183061,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 587.0493012569997
+    },
+    {
+      "c_inj": 3.0,
+      "c_prod": 2.0,
+      "discount_percent": 2,
+      "price_scale": 0.8,
+      "mean_gain_MUSD": 524.7736422580701,
+      "mean_margin_over_fixed_reference_MUSD": 729.4601964045937,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 425.94415269453646
+    },
+    {
+      "c_inj": 3.0,
+      "c_prod": 2.0,
+      "discount_percent": 2,
+      "price_scale": 1.0,
+      "mean_gain_MUSD": 587.7498874252914,
+      "mean_margin_over_fixed_reference_MUSD": 721.1949284919322,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 472.7338595848145
+    },
+    {
+      "c_inj": 3.0,
+      "c_prod": 2.0,
+      "discount_percent": 2,
+      "price_scale": 1.2,
+      "mean_gain_MUSD": 650.7261325925131,
+      "mean_margin_over_fixed_reference_MUSD": 712.9296605792708,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 510.45047980750707
+    },
+    {
+      "c_inj": 3.0,
+      "c_prod": 2.0,
+      "discount_percent": 8,
+      "price_scale": 0.8,
+      "mean_gain_MUSD": 298.5423435409783,
+      "mean_margin_over_fixed_reference_MUSD": 424.1113745178949,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 231.94536014102232
+    },
+    {
+      "c_inj": 3.0,
+      "c_prod": 2.0,
+      "discount_percent": 8,
+      "price_scale": 1.0,
+      "mean_gain_MUSD": 367.39452790961747,
+      "mean_margin_over_fixed_reference_MUSD": 439.1508434911383,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 300.3439195549955
+    },
+    {
+      "c_inj": 3.0,
+      "c_prod": 2.0,
+      "discount_percent": 8,
+      "price_scale": 1.2,
+      "mean_gain_MUSD": 436.2467122782566,
+      "mean_margin_over_fixed_reference_MUSD": 454.19031246438163,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 349.03251297773744
+    },
+    {
+      "c_inj": 3.0,
+      "c_prod": 2.0,
+      "discount_percent": 15,
+      "price_scale": 0.8,
+      "mean_gain_MUSD": 158.08149164288128,
+      "mean_margin_over_fixed_reference_MUSD": 235.1261756511996,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 112.86060441731954
+    },
+    {
+      "c_inj": 3.0,
+      "c_prod": 2.0,
+      "discount_percent": 15,
+      "price_scale": 1.0,
+      "mean_gain_MUSD": 224.2969767307561,
+      "mean_margin_over_fixed_reference_MUSD": 260.5612795834598,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 187.5125255716207
+    },
+    {
+      "c_inj": 3.0,
+      "c_prod": 2.0,
+      "discount_percent": 15,
+      "price_scale": 1.2,
+      "mean_gain_MUSD": 290.51246181863087,
+      "mean_margin_over_fixed_reference_MUSD": 285.99638351571986,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 238.32303175941132
+    },
+    {
+      "c_inj": 4.0,
+      "c_prod": 3.0,
+      "discount_percent": 0,
+      "price_scale": 0.8,
+      "mean_gain_MUSD": 791.6689038710376,
+      "mean_margin_over_fixed_reference_MUSD": 1258.6095141455376,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 535.9815729841248
+    },
+    {
+      "c_inj": 4.0,
+      "c_prod": 3.0,
+      "discount_percent": 0,
+      "price_scale": 1.0,
+      "mean_gain_MUSD": 849.2317906387968,
+      "mean_margin_over_fixed_reference_MUSD": 1237.1114034819216,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 654.1313904801561
+    },
+    {
+      "c_inj": 4.0,
+      "c_prod": 3.0,
+      "discount_percent": 0,
+      "price_scale": 1.2,
+      "mean_gain_MUSD": 906.7946774065562,
+      "mean_margin_over_fixed_reference_MUSD": 1215.613292818306,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 742.2576642569999
+    },
+    {
+      "c_inj": 4.0,
+      "c_prod": 3.0,
+      "discount_percent": 2,
+      "price_scale": 0.8,
+      "mean_gain_MUSD": 626.7478481347987,
+      "mean_margin_over_fixed_reference_MUSD": 1025.3801812027405,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 404.2170273295954
+    },
+    {
+      "c_inj": 4.0,
+      "c_prod": 3.0,
+      "discount_percent": 2,
+      "price_scale": 1.0,
+      "mean_gain_MUSD": 689.7240933020202,
+      "mean_margin_over_fixed_reference_MUSD": 1017.1149132900792,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 520.774539353056
+    },
+    {
+      "c_inj": 4.0,
+      "c_prod": 3.0,
+      "discount_percent": 2,
+      "price_scale": 1.2,
+      "mean_gain_MUSD": 752.7003384692415,
+      "mean_margin_over_fixed_reference_MUSD": 1008.8496453774177,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 618.8381633987947
+    },
+    {
+      "c_inj": 4.0,
+      "c_prod": 3.0,
+      "discount_percent": 8,
+      "price_scale": 0.8,
+      "mean_gain_MUSD": 304.6708117715278,
+      "mean_margin_over_fixed_reference_MUSD": 564.6173590221803,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 152.5187808973267
+    },
+    {
+      "c_inj": 4.0,
+      "c_prod": 3.0,
+      "discount_percent": 8,
+      "price_scale": 1.0,
+      "mean_gain_MUSD": 373.52299614016704,
+      "mean_margin_over_fixed_reference_MUSD": 579.6568279954239,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 259.16892104419384
+    },
+    {
+      "c_inj": 4.0,
+      "c_prod": 3.0,
+      "discount_percent": 8,
+      "price_scale": 1.2,
+      "mean_gain_MUSD": 442.3751805088061,
+      "mean_margin_over_fixed_reference_MUSD": 594.6962969686672,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 365.819061191061
+    },
+    {
+      "c_inj": 4.0,
+      "c_prod": 3.0,
+      "discount_percent": 15,
+      "price_scale": 0.8,
+      "mean_gain_MUSD": 115.08747308485584,
+      "mean_margin_over_fixed_reference_MUSD": 286.27186289785675,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 11.63686145323795
+    },
+    {
+      "c_inj": 4.0,
+      "c_prod": 3.0,
+      "discount_percent": 15,
+      "price_scale": 1.0,
+      "mean_gain_MUSD": 181.30295817273054,
+      "mean_margin_over_fixed_reference_MUSD": 311.70696683011687,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 103.84907734387076
+    },
+    {
+      "c_inj": 4.0,
+      "c_prod": 3.0,
+      "discount_percent": 15,
+      "price_scale": 1.2,
+      "mean_gain_MUSD": 247.51844326060532,
+      "mean_margin_over_fixed_reference_MUSD": 337.14207076237705,
+      "runs_above_reference": 10,
+      "min_gain_MUSD": 196.06129323450375
+    }
+  ],
+  "water_limit_sensitivity": [
+    {
+      "water_limit": 0.1,
+      "retained_policies": 2,
+      "mean_gain_MUSD": 87.27082707877831,
+      "reference_gain_MUSD": 0.0
+    },
+    {
+      "water_limit": 0.15,
+      "retained_policies": 3,
+      "mean_gain_MUSD": 126.23048679014497,
+      "reference_gain_MUSD": 0.0
+    },
+    {
+      "water_limit": 0.2,
+      "retained_policies": 5,
+      "mean_gain_MUSD": 191.31721419017322,
+      "reference_gain_MUSD": 62.621191192064764
+    },
+    {
+      "water_limit": 0.25,
+      "retained_policies": 10,
+      "mean_gain_MUSD": 361.2660562740384,
+      "reference_gain_MUSD": 62.621191192064764
+    },
+    {
+      "water_limit": 0.3,
+      "retained_policies": 10,
+      "mean_gain_MUSD": 361.2660562740384,
+      "reference_gain_MUSD": 62.621191192064764
+    }
+  ],
+  "economic_decomposition": [
+    {
+      "component": "Discounted oil revenue",
+      "team_gain_MUSD": 344.2609218431961,
+      "reference_gain_MUSD": 269.06357697697877,
+      "margin_MUSD": 75.19734486621735
+    },
+    {
+      "component": "Injected-water cost contribution",
+      "team_gain_MUSD": 21.753329305817545,
+      "reference_gain_MUSD": -144.12976143793878,
+      "margin_MUSD": 165.88309074375633
+    },
+    {
+      "component": "Produced-water cost contribution",
+      "team_gain_MUSD": -4.7481948749753204,
+      "reference_gain_MUSD": -62.312624346975326,
+      "margin_MUSD": 57.56442947200001
+    }
+  ]
+}

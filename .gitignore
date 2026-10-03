@@ -1,0 +1,6 @@
+data/
+*.zip
+__pycache__/
+*.pyc
+economics/reproduced.json
+.venv/

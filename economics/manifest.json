@@ -1,0 +1,40 @@
+{
+  "baseline": "physical/baseline.npz",
+  "reference": "physical/bl_B2_v2_5.npz",
+  "policies": [
+    "physical/team_F2full7_1_r3_c5_0ff569bbd8.npz",
+    "physical/team_F2full7_2_r2_c5_e4272aa1db.npz",
+    "physical/team_F2full7_3_r3_c4_c3b1a8de66.npz",
+    "physical/team_F2full7_4_r3_c2_b26b3be651.npz",
+    "physical/team_F2full7_5_r2_c4_502200df6f.npz",
+    "physical/team_F2full7_6_r3_c5_7307426f69.npz",
+    "physical/team_F2full7_7_r3_c4_4e8035c6d4.npz",
+    "physical/team_F2full7_8_r2_c4_4cc21f1bb9.npz",
+    "physical/team_F2full7_9_r3_c5_11c7546c1d.npz",
+    "physical/team_F2full7_10_r3_c2_3734b2f0ef.npz"
+  ],
+  "files": {
+    "constants.json": "81a162b2ccf75d670d325947405b8ccc9d6ddb5f04c5801a19faad46d13a1cd1",
+    "economics.py": "f8924e24369ba6b09e9e5001b7f5ed7747eb36068c15df0bedbc90fe3e375378",
+    "expected.json": "bb116b6e72baaf2d9eba12a93ba058c50d36e3cafd4fd09a932e3676b7e32190",
+    "reproduce_economics.py": "43bfe3ea93e23085018c8570ad4b6635f103532ab38b65dcf8eb38d73c018b7a",
+    "physical/baseline.npz": "ef0381d29c01f384732a98c470aa26c14b6ca2a84be824118ac8f8eade160d7c",
+    "physical/bl_B2_v2_5.npz": "790275f3df7e37f0cc0887e7219cde327f3352d31c7e4d6ccf003289592b9610",
+    "physical/team_F2full7_1_r3_c5_0ff569bbd8.npz": "677b69b4240a6363eefefe2f2b8743119db08b9d12ce268606c25028d39841dc",
+    "physical/team_F2full7_2_r2_c5_e4272aa1db.npz": "4ddc731efd0524e8daa470bd6839b5f92bd48102341b89d75fd491803c890c09",
+    "physical/team_F2full7_3_r3_c4_c3b1a8de66.npz": "f9948db0772f99ef90b27f3c6794356f3cccc8af7ecd48f0c1903eb74d51be53",
+    "physical/team_F2full7_4_r3_c2_b26b3be651.npz": "1281ec19b24d423db9224d121ab75d01773b96ed0a69852d4aa8f095f30cddcf",
+    "physical/team_F2full7_5_r2_c4_502200df6f.npz": "ee01552b15f9317728c5b8573e3fa2748586f3cb15b3b52992d6d721a4038e32",
+    "physical/team_F2full7_6_r3_c5_7307426f69.npz": "958db37f7cc5255c15e9a51b6adb52e2f43ef11fca3f2191b90e0e751fffb588",
+    "physical/team_F2full7_7_r3_c4_4e8035c6d4.npz": "33d827fd0505419209d87fdb8d98eb4828f30fa8fe7444148f1650d5b2d02512",
+    "physical/team_F2full7_8_r2_c4_4cc21f1bb9.npz": "cdf456c358228b5435fc54de6ea7463ef82b38226a7e0d4a87239a51d7c2b620",
+    "physical/team_F2full7_9_r3_c5_11c7546c1d.npz": "05227fb9a2f7de04896956294d6332531f9415f85de7b1dce9210314726ab9ab",
+    "physical/team_F2full7_10_r3_c2_3734b2f0ef.npz": "a2e01d65c100038b0713d9926ed41fb6eb38377dc98900085f0aa5a2c47b413c"
+  },
+  "source_code_sha256": {
+    "_code/fc_water_econ.py": "00296e930e05692b8d8804b187bc8d6c464aaa39b38557741c0804a3ff3dfcb4",
+    "_code/fc_fix.py": "abf2cdc52be76a7e75177a4865ee870ac2c42962ab3fc552fe647307da4c7985"
+  },
+  "original_analysis_sha256": "0857ae79c1aecdd9944801ae8eb576a5bf26d6295953a2acf3cc699ac0cea577",
+  "original_cohort_sha256": "697c47a7c48fdcacac2e3bec53b2035a0f1b3e0d4365929edf4b0eaff3f37975"
+}

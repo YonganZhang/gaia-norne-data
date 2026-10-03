@@ -1,0 +1,83 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "repeat": 1,
+      "group": "full7",
+      "raw_gain_MUSD": 193.3333313568461,
+      "water_deviation_percent": -9.979338103909063,
+      "gain_MUSD": 193.3333313568461
+    },
+    {
+      "repeat": 1,
+      "group": "nogeom",
+      "raw_gain_MUSD": 228.30396203187632,
+      "water_deviation_percent": -3.241345595336853,
+      "gain_MUSD": 228.30396203187632
+    },
+    {
+      "repeat": 1,
+      "group": "noseis",
+      "raw_gain_MUSD": 125.3476726567893,
+      "water_deviation_percent": 61.444050208577835,
+      "gain_MUSD": 0.0
+    },
+    {
+      "repeat": 2,
+      "group": "full7",
+      "raw_gain_MUSD": 237.38880614039184,
+      "water_deviation_percent": -12.24557165998661,
+      "gain_MUSD": 237.38880614039184
+    },
+    {
+      "repeat": 2,
+      "group": "nogeom",
+      "raw_gain_MUSD": 190.96077009114026,
+      "water_deviation_percent": 34.065726292049845,
+      "gain_MUSD": 0.0
+    },
+    {
+      "repeat": 2,
+      "group": "noseis",
+      "raw_gain_MUSD": 262.4147763434682,
+      "water_deviation_percent": -31.54405514835514,
+      "gain_MUSD": 0.0
+    },
+    {
+      "repeat": 3,
+      "group": "full7",
+      "raw_gain_MUSD": 207.4382406563227,
+      "water_deviation_percent": 56.575303498214026,
+      "gain_MUSD": 0.0
+    },
+    {
+      "repeat": 3,
+      "group": "nogeom",
+      "raw_gain_MUSD": 335.22287026427796,
+      "water_deviation_percent": 28.73959027102344,
+      "gain_MUSD": 0.0
+    },
+    {
+      "repeat": 3,
+      "group": "noseis",
+      "raw_gain_MUSD": 139.33671716116834,
+      "water_deviation_percent": 15.913833250152031,
+      "gain_MUSD": 139.33671716116834
+    }
+  ],
+  "group_mean_MUSD": {
+    "full7": 143.57404583241262,
+    "nogeom": 76.10132067729211,
+    "noseis": 46.44557238705611
+  },
+  "source_acceptance_sha256": "758bae79e9cced436e94012157b74aee06259260a6d781109e1297c1a932d9e9",
+  "source_hashes": {
+    "audit.json": "03283a5dffc19943fc681e8632e60817517cf98a4d960c73c1b37954376dd867",
+    "screen_audit.json": "7807bb3a269d29553e1d38bf7a03928be4a8b24b82394abaef16825cb47d13c0",
+    "manifest.json": "979d4c047eb6d18061544f9f6e91ee91da1beae37cd21cacc26a9ab707002803",
+    "execution.json": "8435e1840113c4625cd6824f85284dd740322ebbbcfa71aa139d8619811f6ddd",
+    "availability/response.json": "a6b7a0b60ca5ec56c2e9d1b04f5b0043e3825cd009ea3275fac4d08a1a515bc6",
+    "RESULTS.md": "2598f12d6c32e296b0a632f2ab48b595b41bc0e39a6cdf59a16e512801522594"
+  },
+  "scope": "Separate one-round configuration sensitivity; no causal role or feedback estimate."
+}
