@@ -4,3 +4,11 @@ __pycache__/
 *.pyc
 economics/reproduced.json
 .venv/
+
+_pipelines/fc_team/trace*/
+_pipelines/fc_team/loop*.json
+_pipelines/*/work*/
+*.UNRST
+*.UNSMRY
+vendor/
+research-output/

@@ -1,10 +1,10 @@
 cff-version: 1.2.0
 message: "Please cite this dataset and acknowledge the upstream OPM Norne benchmark."
-type: dataset
-title: "Gaia Norne forecast simulation data and economic reproduction companion"
+type: software
+title: "Gaia: water-injection decision team research code and Norne simulation data"
 authors:
   - family-names: Zhang
     given-names: Yongan
 license: ODbL-1.0
-version: "0.1.0"
+version: "0.2.0"
 # This dataset citation does not establish the manuscript author list.

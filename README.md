@@ -1,39 +1,66 @@
-# Gaia Norne forecast data
+# Gaia: research code and Norne simulation data
 
-可公开复用的 Norne 注水决策模拟数据，以及 Gaia 论文经济结果复算附件。
+Companion to **Gaia: a large language model agent team for water-injection decision optimisation**. The manuscript is a research manuscript; this repository does not imply journal acceptance.
 
-## 数据内容
+Version 0.2.0 adds the research implementation and frozen surrogate to the existing 0.1.0 data release. Data bytes and their licenses are unchanged.
 
-- `norne-forecast-data.zip`：主数据 8,000 个样本、确认数据 500 个样本；每个样本含 6 个控制阶段 × 4 口注水井的控制量、22 口生产井的油水产量与井底压力、实际注水率和全场累计量。
-- `economics/`：原十次选定主方案、基准与固定参考共十二份物理输出；可独立复算平均收益、六十种经济情景、五档注水约束及收益拆解。
-- `tables/`：经济敏感性、水限敏感性、收益拆解、十三次修复后反馈运行和九次 Luna 单轮配置验证的汇总。三类 Agent 运行单独报告。
-- `data_manifest.json`：每个输入文件的 SHA-256、数组形状、井顺序与来源版本。
+## What is public
 
-主数据归档作为 GitHub Release 附件分发，下载后放在仓库根目录。
+| Component | Location | Use |
+|---|---|---|
+| 8,000 main + 500 confirmation simulated schedules | [Data archive, v0.1.0](https://github.com/YonganZhang/gaia-norne-data/releases/download/v0.1.0/norne-forecast-data.zip) | Train/evaluate the surrogate |
+| Transformer architecture, original training routine and a training-only entrypoint | `_code/fc_mech.py`, `_code/fc_rank_fidelity.py`, `_code/train_surrogate.py` | Inspect and retrain PosNet |
+| Frozen trained weights, normalisation and injectivity helpers | `_pipelines/` | Inference without retraining |
+| Specialist roles, prompts, collaboration, synthesis, physical adjudication | `_code/fc_team.py`, `_code/fc_team_loop.py` | Inspect or run a new decision experiment |
+| Forecast schedule generation and OPM adapters | `_code/forecast_gen.py`, `_code/norne_bulk.py`, `_code/fc_decide.py` | Run new reservoir simulations with upstream decks |
+| 12 fixed physical trajectories and economic reproduction | `economics/` | Reproduce primary mean gains and sensitivity grid |
+| Data definitions, SHA-256 and licenses | `DATA_DICTIONARY.md`, `data_manifest.json`, `LICENSES/` | Interpret and verify inputs |
 
-## 快速使用
+## Quick start: no account, simulator or GPU
+
+Python 3.11 or newer is recommended. Install PyTorch appropriate for your CPU/GPU; the requirements allow compatible versions rather than promising bitwise equivalence.
 
 ```bash
-python -m pip install -r requirements.txt
-python verify_data.py --archive norne-forecast-data.zip
+python -m pip install -r requirements-research.txt
+python _code/smoke_test.py
+python _code/predict.py --theta examples/theta.json --output research-output/prediction.npz
 python economics/reproduce_economics.py
-python -m zipfile -e norne-forecast-data.zip .
 ```
 
-数据不需要模型账号、API key、GPU 或油藏模拟器即可读取。最后一个命令解压后，样本位于 `data/norne_fc/shards/00000.npz`；用 `numpy.load(..., allow_pickle=False)` 打开。详细字段见 DATA_DICTIONARY.md。
+The smoke test loads the released weights, checks `(1, 11, 2, 40)` output, creates every specialist's input slice, and independently checks the baseline economic calculation. It makes no language-model or simulator calls.
 
-## 适用范围
+The input is a **complete injection schedule**, not a daily/monthly observation. `theta` has 6 stages × 4 injectors, in stage-major order. Stages begin in 2007, 2008, 2010, 2012, 2014 and 2017. Injector order is F-1H, F-2H, F-3H, F-4H. Values are log10 multipliers: `theta[0,0] = 0.1` requests about `1.259 × 8554.2 = 10769 sm3/day` for F-1H in the first stage. Actual injection can be clipped by simulator pressure constraints. The model predicts oil and water rates at 40 reporting nodes for 11 active producer outputs over the forecast horizon.
 
-这是固定地质模型下的模拟预测数据，不是现场实测数据；主要变化是注水控制。预测生产井按上限自由生产，地质参数没有随机化。部分井在预测期关闭，F-4H 的实际注水可能受井底压力上限截断。不能直接声称跨油田、跨地质稳健性或现场经济收益。
+## Download, verify and evaluate all data
 
-确认集与主数据的第零号样本都是相同基准控制，不能将两者都视为独立随机样本；对主数据旧测试集曾进行模型选择，确认集也已经用于论文评估，不再是未使用的测试集。
+Download `norne-forecast-data.zip` from the v0.1.0 release. SHA-256:
+`b3e376b9eee5b35da890616f4ee6d5955c6b7ba8ce70de7754e342ae3b3e9abe`.
 
-经济附件验证的是已有模拟轨迹的计价，不复现 Agent 的候选生成、代理模型训练或全物理模拟执行。十三次反馈验证与九次 Luna 验证均为独立补充，不能混进原十次主队列，也不能当成已完成九十次角色对比。
+```bash
+python verify_data.py --archive norne-forecast-data.zip
+python -m zipfile -e norne-forecast-data.zip .
+python _code/evaluate_surrogate.py
+python _code/train_surrogate.py --device cpu --epochs 600 --output research-output/retrained
+```
 
-## 来源与许可
+Set `GAIA_DATA_ROOT` if the extracted `norne_fc` and `norne_fc_confirm` directories live elsewhere. Training reserves the first 400 indices of the seed-0 permutation for testing, the next 200 for validation, and trains on the remaining 7,400. The deployed routine uses a fixed 600-epoch budget; it does not select a checkpoint using those 200 validation samples. Retraining writes a new directory and does not overwrite the released model. GPU training is supported with `--device cuda:0`.
 
-数据源于 [OPM Norne benchmark](https://github.com/OPM/opm-data/tree/master/norne)。数据许可与署名见 DATA_LICENSE.md 和 LICENSES/；代码为 MIT。
+## Running a new agent experiment
 
-论文工作标题：*Gaia: a layered agent team for reservoir decision making, with authority allocated by measured competence — a water-injection scheduling case study on the Norne field*。这是与稿件配套的数据发布，论文尚未在此声明为已发表。引用信息见 CITATION.cff。
+The release-time team implementation includes specialist feedback corrections made after the original ten F2 observations. It must **not** be represented as an exact historical replay of F2. Model aliases, service behaviour and stochastic outputs can also change. The paper's primary results are independently reproduced from their fixed physical trajectories in `economics/`; the source release makes the architecture and current execution workflow inspectable and reusable.
 
-协作入口见 CONTRIBUTING.md；本仓库不含私人项目历史、模型对话或账号配置。
+For a new run, install the Claude CLI and authenticate your own account, install Docker/OPM Flow and `resdata`, obtain [OPM's Norne benchmark](https://github.com/OPM/opm-data/tree/master/norne), and set `NORNE_DECK`. The generator can first create a history restart with `python _code/forecast_gen.py history`. Review `python _code/fc_team_loop.py --help` and use a new unique run tag. Historical F2/G2 tags are rejected to prevent mixing experiments. New LLM or simulator runs use real compute and potentially a paid account; none is started by the quick-start commands.
+
+The optional calibration-derived `tilt_bins.json` is intentionally absent from the default release. F4's later calibration prior, model and feedback configuration are a distinct treatment, described in the manuscript supplement. No paused project queue is distributed or started. An optional `knowledge/` directory is for a user's own licensed background material; no copyrighted paper full texts are redistributed. Executable team role prompts and the domain rules used by the current implementation are included in source.
+
+## Research interpretation
+
+The forecast inputs are simulation outputs from one fixed Norne geological model, not new field measurements. The primary cohort is ten historical team runs. The single-specialist comparator retains a separate synthesiser; the between-configuration mean difference was not statistically established. The uniform reference searches one dimension while Gaia adjusts 24 controls. The 60 economic scenarios revalue fixed selected schedules, not 60 newly optimised policies. Later Haiku and Luna cohorts remain separate.
+
+Timing in the paper is batched surrogate inference, not whole-workflow time or an estimate of engineering labour savings. Final reported economics use simulator-reported cumulative quantities. The surrogate's screening integration must not be substituted for those final totals.
+
+## Provenance and licensing
+
+Code: MIT, see `LICENSE`. Norne-derived data: ODbL 1.0 database terms and DbCL 1.0 contents terms, see `DATA_LICENSE.md` and `LICENSES/`. Model weights and normalisation files are distributed with the Norne-derived-data attribution and terms in `DATA_LICENSE.md`.
+
+`RESEARCH_CODE_MANIFEST.json` records the source and export hashes. Export changes remove internal development commentary and docstrings, adapt workstation paths to portable configuration, and add standalone entrypoints. Research prompts and mathematical routines are retained. The export is a source snapshot at release time, not an attestation of every historical runtime dependency. Neither private Git history, credentials nor raw language-model conversations are included.

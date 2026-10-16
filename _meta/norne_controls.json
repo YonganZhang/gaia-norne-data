@@ -1,0 +1,58 @@
+{
+ "schema": 2,
+ "controls": [
+  [
+   "C-1H",
+   "GAS"
+  ],
+  [
+   "C-1H",
+   "WATER"
+  ],
+  [
+   "C-2H",
+   "WATER"
+  ],
+  [
+   "C-3H",
+   "GAS"
+  ],
+  [
+   "C-3H",
+   "WATER"
+  ],
+  [
+   "C-4AH",
+   "GAS"
+  ],
+  [
+   "C-4AH",
+   "WATER"
+  ],
+  [
+   "C-4H",
+   "GAS"
+  ],
+  [
+   "C-4H",
+   "WATER"
+  ],
+  [
+   "F-1H",
+   "WATER"
+  ],
+  [
+   "F-2H",
+   "WATER"
+  ],
+  [
+   "F-3H",
+   "WATER"
+  ],
+  [
+   "F-4H",
+   "WATER"
+  ]
+ ],
+ "note": "打包时从 Norne SCHEDULE 冻结的(井,相态)控制清单; 无 deck 环境下 scan_injection_controls 回退读它"
+}

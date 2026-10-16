@@ -1,0 +1,99 @@
+{
+  "version": "0.2.0",
+  "source_snapshot": "706a5a1aeb689e6ef9aea1dd8218352f793dbf24",
+  "note": "Release-time research implementation. Not a claim of exact historical F2 runtime recovery. Comments and docstrings removed from exported modules; path adapters documented below. Executable research prompts retained.",
+  "files": {
+    "_code/fc_agent.py": {
+      "canonical_sha256": "ede6f23eaf26621628b9ec9889fa7d83b0ec0433eaf4b53d138ff83ac6d0a5a6",
+      "export_sha256": "32f1e41b13f0d784ac488a559c27ea7f9711a14eec87e6df0aae6e024e80e58c"
+    },
+    "_code/fc_confirm.py": {
+      "canonical_sha256": "780ad0373f3cde879c76e6532947fd1f7485644088a42edb7a80206d17131243",
+      "export_sha256": "cb6c2d0c44900f68aba3ac9f728f9d49a28642bb78337b2e67429c21c53025c2"
+    },
+    "_code/fc_decide.py": {
+      "canonical_sha256": "311b873b453e7584a358f93a0deace02e332202c65222287e6de6d2431df7592",
+      "export_sha256": "9d118ab16af2f65fdab86aea69b3e26974d8225fefd2577148e9d7ccaf51e568"
+    },
+    "_code/fc_decision.py": {
+      "canonical_sha256": "b8baa00b8f1df0d42d3811ee720ce724190288be74a7586ff0d80d90ebb0569d",
+      "export_sha256": "6d7f86c409cb6d61da5441786a99a60a8e70c1ee27b162ef3e04359dbbedd656"
+    },
+    "_code/fc_fix.py": {
+      "canonical_sha256": "abf2cdc52be76a7e75177a4865ee870ac2c42962ab3fc552fe647307da4c7985",
+      "export_sha256": "899ac2a440755929f4070218592a65360e6e7c9c3fc3471994dddfaec3e46952"
+    },
+    "_code/fc_mech.py": {
+      "canonical_sha256": "dfeeb91b94f076d96dc3a3169ca3a3d8501f6e96d57432fefb461f3575dc3c2b",
+      "export_sha256": "d3df5702ef3e93ebe8feb351ac3decf6d157ebd8617fa8c53bb1f91325ee7db2"
+    },
+    "_code/fc_npv.py": {
+      "canonical_sha256": "1fc9c6bed22b0260fab34e1e2beec11434fa2d2364dae293fdaaf0dcc9b0eac2",
+      "export_sha256": "1b60699e37e4f9cd348f111b88159294acc4019a3b175efd494dcbd0758326c0"
+    },
+    "_code/fc_rank_fidelity.py": {
+      "canonical_sha256": "d86bff18098f0cb5dc3ead60c9c724eb46256ef99ed5823a830aaeacfafdaf30",
+      "export_sha256": "37fbddc0758a4fd5ebb012884802dc8296ed4ad3087784b05193afc9f086591c"
+    },
+    "_code/fc_team.py": {
+      "canonical_sha256": "0b28a8b99c3aa63d4ec7cf052eb4c725d59faccc82bb6613e6552d25e5779663",
+      "export_sha256": "459fbe2286ba7c2887dc9087ad4419b8d87046a0a73d29a17a2df07faea648ab"
+    },
+    "_code/fc_team_loop.py": {
+      "canonical_sha256": "0427832b1e720eaa9a8c99dafbd9241cadc87c91f032d5bb86c55dd8c514ccb2",
+      "export_sha256": "607078275af7af0d293af605eb039b0c3c1c0b763b25e8051862ad7a4409231c"
+    },
+    "_code/fc_team_proxy.py": {
+      "canonical_sha256": "c5928085ae01bf205d86033349e80d416126b31cfee4d6a9edb2731acab1be9e",
+      "export_sha256": "e1b7c4b200af1f6a9e0cd8b53802c779038042e5d06bf5e1079cff60d713d878"
+    },
+    "_code/fc_truth.py": {
+      "canonical_sha256": "11e3c4e3e214ae42b149cc2fc6f93a2c6b5ec7fd4de28455bf5690a42f090285",
+      "export_sha256": "8fe03955662c0cec7e0bbdc045f7afb34951793364288c448bb6e1b138742e5f"
+    },
+    "_code/fc_water_econ.py": {
+      "canonical_sha256": "00296e930e05692b8d8804b187bc8d6c464aaa39b38557741c0804a3ff3dfcb4",
+      "export_sha256": "3875dca132698d98c999ebade391e22693e59c95180874dc0f5e27def351077e"
+    },
+    "_code/forecast_gen.py": {
+      "canonical_sha256": "8881b9ed2d69f6469f5d4f22a343b10472ef4dc295c47c342550c22ed098fd2f",
+      "export_sha256": "7c1ced696676aeaee04387345f00ec31700a1bcc4da332201e5dfb6c38afecd1"
+    },
+    "_code/norne_bulk.py": {
+      "canonical_sha256": "c953f9cd0d15e4e73bfea2b37da90aea6d76e0cfe3c407496fb015c5db024f5c",
+      "export_sha256": "c30cc5af94a3d8b0ad0397bfec621e1d5eb39eeed570fcc348aa867ef429e526"
+    },
+    "_code/paths.py": {
+      "canonical_sha256": "ba1bb70fd3ee83ae268bab4bf76af8acc9f02e4faeedcd9169176489f6d4490d",
+      "export_sha256": "54c7a0a6e9d5d23fb7a5bdbd5a8b695d95b0025228bba9d4a2b52564455b9a76"
+    },
+    "_meta/norne_controls.json": {
+      "canonical_sha256": "f791b38e068caf84d39264711450c39359d6b222457454ddbc91846e6b13a468",
+      "export_sha256": "f791b38e068caf84d39264711450c39359d6b222457454ddbc91846e6b13a468"
+    },
+    "_pipelines/fc_rank_fidelity/surrogate.pt": {
+      "canonical_sha256": "a17718893b0f756dc08f0cbd705f51b89261e6cce75a40f1adf955e7ff6a1db1",
+      "export_sha256": "a17718893b0f756dc08f0cbd705f51b89261e6cce75a40f1adf955e7ff6a1db1"
+    },
+    "_pipelines/fc_team/norm.npz": {
+      "canonical_sha256": "c9fbe0a5b59bfa7916a80bc46c4db9b0c57836b6f3b13f3a4779f715abfc7a8d",
+      "export_sha256": "c9fbe0a5b59bfa7916a80bc46c4db9b0c57836b6f3b13f3a4779f715abfc7a8d"
+    },
+    "_pipelines/fc_team/cap_refit.npy": {
+      "canonical_sha256": "b464e08ba080184dc997853aa27d0fc4042e4b87b8cf92ceee27b29f0c9fd34a",
+      "export_sha256": "b464e08ba080184dc997853aa27d0fc4042e4b87b8cf92ceee27b29f0c9fd34a"
+    },
+    "_pipelines/fc_team/water_model.npy": {
+      "canonical_sha256": "ab6735a21a3d7a047747694b3ab1efa816dff25d3452b80e9b52c2ab93f0d7eb",
+      "export_sha256": "ab6735a21a3d7a047747694b3ab1efa816dff25d3452b80e9b52c2ab93f0d7eb"
+    },
+    "_pipelines/fc_team/cartography.json": {
+      "canonical_sha256": "242b707473f6aec53ca2e6c6dee196b822f20412af72ed8352daeae7c62dd762",
+      "export_sha256": "242b707473f6aec53ca2e6c6dee196b822f20412af72ed8352daeae7c62dd762"
+    },
+    "_pipelines/fc_decide/sim/baseline.npz": {
+      "canonical_sha256": "ef0381d29c01f384732a98c470aa26c14b6ca2a84be824118ac8f8eade160d7c",
+      "export_sha256": "ef0381d29c01f384732a98c470aa26c14b6ca2a84be824118ac8f8eade160d7c"
+    }
+  }
+}

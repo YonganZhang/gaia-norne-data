@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-16",
+  "offline_smoke": "passed",
+  "live_producer_outputs": 11,
+  "team_role_slices": 8,
+  "baseline_npv_MUSD": 1773.397307737011,
+  "economic_reproduction": "passed",
+  "primary_mean_gain_MUSD": 361.2660562740384,
+  "test_400_mean_relative_oil_error_percent": 0.34850329681131387,
+  "confirmation_500_mean_relative_oil_error_percent": 0.3691762705861102,
+  "new_llm_calls": 0,
+  "new_simulator_calls": 0,
+  "retraining_performed": false
+}

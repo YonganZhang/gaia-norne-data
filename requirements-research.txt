@@ -1,0 +1,6 @@
+numpy>=2.0,<3
+scipy>=1.13,<2
+torch>=2.4,<3
+scikit-learn>=1.5,<2
+matplotlib>=3.8,<4
+# Optional for simulator output harvesting: resdata
